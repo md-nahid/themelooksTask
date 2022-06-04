@@ -1,0 +1,15 @@
+.topbar {
+  .container {
+    font-weight: 300;
+    .row {
+      .col {
+        display: flex;
+        a {
+          color: #ffffff;
+          margin-left: 10px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

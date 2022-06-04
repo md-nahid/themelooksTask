@@ -1,0 +1,25 @@
+.domain-features {
+  .domainFeaturesDetails {
+    margin-top: 70px;
+    .card {
+      margin: 5px;
+      &:hover {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      }
+      .card-icon {
+        color: $themeColor;
+        p {
+          width: 50px;
+          border: 1px solid $themeColor;
+          margin-top: 15px;
+        }
+      }
+      .card-body {
+        p {
+          margin-top: 20px;
+          color: $thirdFontColor;
+        }
+      }
+    }
+  }
+}

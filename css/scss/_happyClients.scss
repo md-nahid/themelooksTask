@@ -1,0 +1,43 @@
+.happy-clients {
+  > div {
+    background: url('../../images/backgroundimg.png'), rgba(0, 0, 0, 0.973);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    .container {
+      overflow: hidden;
+      .d-flex {
+        @media (max-width: 768px) {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 30px;
+        }
+        .happy-client {
+          .happy-clients-icons {
+            font-size: 46px;
+            left: 0;
+            top: 0;
+          }
+          .happy-clients-numbers {
+            p {
+              font-size: 14px;
+            }
+            h3 {
+              font-size: 48px;
+              font-weight: normal;
+            }
+          }
+        }
+        .divider {
+          span {
+            display: inline-block;
+            height: 100px;
+            border: 1px solid $themeColor;
+            transform: rotate(25deg);
+          }
+        }
+      }
+    }
+  }
+}

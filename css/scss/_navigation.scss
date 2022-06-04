@@ -1,0 +1,238 @@
+.navigationHeader {
+  background: $navBackground;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  .container {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.5s ease;
+      .logo {
+        a {
+          display: inline-block;
+          width: 100%;
+          transition: 0.5s ease;
+        }
+      }
+      .navigation {
+        > ul {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          li {
+            position: relative;
+            transition: all 1s ease;
+            a {
+              display: inline-block;
+              padding: 25px 15px;
+            }
+            &:hover {
+              > a {
+                color: $themeColor;
+              }
+            }
+            > ul {
+              list-style-type: none;
+              position: absolute;
+              left: 0;
+              top: 100%;
+              background: #ffffff;
+              box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+              overflow: hidden;
+              display: none;
+              min-width: 200px;
+              li {
+                a {
+                  display: block;
+                  padding: 15px 25px;
+                  &:hover {
+                    background: $thirdFontColor;
+                    color: #ffffff;
+                  }
+                }
+              }
+            }
+            &:hover {
+              ul {
+                display: block;
+              }
+            }
+            .cart {
+              &:hover {
+                color: $themeColor;
+              }
+            }
+          }
+          .navActive {
+            position: relative;
+            &::after {
+              content: '';
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              border: 1px solid $themeColor;
+            }
+            > a {
+              color: $themeColor;
+            }
+          }
+          .navUserBtn {
+            button {
+              transform: translateY(80%);
+              background-color: $themeColor;
+              color: #ffffff;
+              border-radius: 9999px;
+              padding: 8px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 3px solid #ffffff;
+              outline: 1px solid $primaryFontColr;
+              position: relative;
+              transition: 0.3s ease;
+              &:hover {
+                color: #ffffff;
+              }
+              &::after {
+                content: '';
+                position: absolute;
+                top: -100%;
+                height: 30px;
+                border: 1px solid $thirdFontColor;
+              }
+            }
+          }
+        }
+      }
+      .mobileMenu {
+        button {
+          background: none;
+          font-size: 35px;
+          border: none;
+          outline: none;
+          color: $primaryFontColr;
+          padding: 0 15px;
+          padding-bottom: 8px;
+        }
+        .navUserBtn {
+          font-size: 20px;
+          background-color: $themeColor;
+          color: #ffffff;
+          border-radius: 9999px;
+          padding: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 3px solid #ffffff;
+          outline: 1px solid $primaryFontColr;
+        }
+      }
+    }
+    .offCanvasMenu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.904);
+      overflow: hidden;
+      transition: 0.5s ease;
+      overflow-y: auto;
+      overflow-x: hidden;
+      .closeMenu {
+        background: none;
+        border: none;
+        outline: none;
+        color: #ffffff;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      > ul {
+        width: 100%;
+        transition: all 1s ease;
+        margin-top: 150px;
+        li {
+          transition: 0.5s ease;
+          a {
+            display: block;
+            padding: 12px;
+            padding-left: 30px;
+            transition: 0.3s ease;
+            color: #ffffff;
+          }
+          > ul {
+            overflow: hidden;
+            height: 0;
+            transition: height 0.5s ease;
+            background: rgba(0, 0, 0, 0.952);
+            li {
+              a {
+                display: block;
+                margin-left: 30px;
+                &:hover {
+                  margin-left: 50px;
+                }
+              }
+            }
+          }
+          &:hover {
+            background: $themeColor;
+            font-weight: bold;
+            > a {
+              color: #ffffff;
+            }
+          }
+        }
+        .mobileNavActive {
+          background: $themeColor;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+// this class will add when window scrolled
+.scrolled {
+  .container {
+    nav {
+      transition: 0.5s ease;
+      .logo {
+        a {
+          width: 150px;
+          transition: 0.5s ease;
+        }
+      }
+      .navigation {
+        > ul {
+          > li {
+            > a {
+              padding: 14px 15px;
+            }
+          }
+          .navUserBtn {
+            transform: scale(0.8);
+            button {
+              transform: translateY(0);
+              &::after {
+                height: 0;
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// @keyframes navBarCollapse {
+//   from {
+//     padding: 25px 0;
+//   }
+//   to {
+//     padding: 5px 0;
+//   }
+// }

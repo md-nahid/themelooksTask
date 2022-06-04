@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORM Host | Quality is our main focus</title>
+    <!-- roboto fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap 5 cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- swiper css  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- animate css  -->
+    <link rel="stylesheet" href="css/extra/animate.min.css" />
+    <!-- my style sheet  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- menu top bar  -->
+    <div class="bg-dark text-white topbar d-none d-lg-block">
+      <div class="container">
+        <div class="row py-3 font-roboto">
+          <div class="col d-flex align-item-center">
+            <p>Follow Us</p>
+            <a href="#"><span class="iconify" data-icon="cib:facebook-f"></span></a>
+            <a href="#"><span class="iconify" data-icon="bi:twitter"></span></a>
+            <a href="#"><span class="iconify" data-icon="akar-icons:linkedin-v2-fill"></span></a>
+            <a href="#"><span class="iconify" data-icon="fontisto:google-plus"></span></a>
+            <a href="#"><span class="iconify" data-icon="bxl:pinterest-alt"></span></a>
+            <a href="#"><span class="iconify" data-icon="fa:youtube"></span></a>
+          </div>
+          <div class="col d-flex justify-content-end align-item-center">
+            <div class="me-4">
+              <a href="tel:123456789" class="text-white"
+                ><span class="iconify me-2" data-icon="fa6-solid:square-phone"></span>+0123 456
+                123456</a
+              >
+            </div>
+            <div>
+              <a href="mailto:support@you.yours.com" class="text-white"
+                ><span class="iconify me-1" data-icon="fluent:mail-48-filled"></span>
+                <span>support@you.yours.com</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header with desktop, mobile, offcanvas menu  -->
+    <header class="navigationHeader">
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="navigation d-none d-lg-block">
+            <ul class="font-droid font-16">
+              <li class="navActive"><a href="#">Home</a></li>
+              <li>
+                <a href="#hosting"
+                  >Hosting <span class="iconify" data-icon="ant-design:caret-down-filled"></span
+                ></a>
+                <ul>
+                  <li>
+                    <a href="#">Dropdown</a>
+                  </li>
+                  <li>
+                    <a href="#">Dropdown</a>
+                  </li>
+                  <li>
+                    <a href="#">Dropdown</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#domain">Domain</a></li>
+              <li><a href="#services">Services</a></li>
+              <li>
+                <a href="#pages"
+                  >Pages <span class="iconify" data-icon="ant-design:caret-down-filled"></span
+                ></a>
+                <ul>
+                  <li>
+                    <a href="#">Dropdown</a>
+                  </li>
+                  <li>
+                    <a href="#">Dropdown</a>
+                  </li>
+                  <li>
+                    <a href="#">Dropdown</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="navUserBtn">
+                <button class="font-30">
+                  <span class="iconify" data-icon="carbon:user-avatar-filled-alt"></span>
+                </button>
+              </li>
+              <li>
+                <button class="border-0 bg-transparent ms-2 cart">
+                  <span class="iconify" data-icon="fa:cart-arrow-down"></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="mobileMenu d-flex d-lg-none align-items-center">
+            <button class="navUserBtn">
+              <span class="iconify" data-icon="carbon:user-avatar-filled-alt"></span>
+            </button>
+            <button class="ms-2 ms-sm-4 openMobileMenu">
+              <span class="iconify" data-icon="uil:bars"></span>
+            </button>
+          </div>
+        </nav>
+        <div class="offCanvasMenu">
+          <button class="closeMenu font-30">
+            <span class="iconify" data-icon="akar-icons:cross"></span>
+          </button>
+          <ul>
+            <li class="mobileNavActive">
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#hosting"
+                >Hosting <span class="iconify" data-icon="ant-design:caret-down-filled"></span
+              ></a>
+              <ul>
+                <li>
+                  <a href="#">Dropdown</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#domain">Domain</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#pages"
+                >Pages <span class="iconify" data-icon="ant-design:caret-down-filled"></span
+              ></a>
+              <ul>
+                <li>
+                  <a href="#">Dropdown</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown</a>
+                </li>
+                <li>
+                  <a href="#">Dropdown</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#blog">Blog</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- top banner hero section  -->
+      <section class="position-relative hero-section section-padding">
+        <button class="prev-slide position-absolute top-50 left-0 translate-middle-y font-24">
+          <span class="iconify" data-icon="akar-icons:chevron-left"></span>
+        </button>
+        <header class="container">
+          <div class="swiper mySwiper w-100">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                  <div class="hero-text font-droid">
+                    <h2 class="font-48 fw-bold">Build Your Dream Website With OMRhost</h2>
+                    <p class="font-roboto font-16 fw-normal">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.
+                    </p>
+                    <div class="mt-4 mt-sm-5">
+                      <button class="custom-btn">
+                        <span
+                          >Learn more <span class="iconify" data-icon="bi:arrow-right"></span
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end align-items-center hero-img">
+                    <img src="images/heroimg.png" alt="hero" class="w-100" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <button class="next-slide position-absolute top-50 end-0 translate-middle-y font-24">
+          <span class="iconify" data-icon="akar-icons:chevron-right"></span>
+        </button>
+      </section>
+      <!-- hosting features  -->
+      <div>
+        <div class="hosting-plans font-droid">
+          <div class="position-relative">
+            <div class="card border-0">
+              <div class="card-body">
+                <h4 class="card-title font-24 fw-bold">Shared Hosting</h4>
+                <p class="card-text font-roboto font-14 fw-normal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, numquam.
+                </p>
+                <button>
+                  View More
+                  <span class="iconify" data-icon="bi:arrow-right"></span>
+                </button>
+              </div>
+            </div>
+            <div class="card-icon">
+              <span class="iconify" data-icon="fa:server"></span>
+            </div>
+          </div>
+          <div class="position-relative">
+            <div class="card border-0">
+              <div class="card-body">
+                <h4 class="card-title font-24 fw-bold">Reseller Hosting</h4>
+                <p class="card-text font-roboto font-14 fw-normal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, numquam.
+                </p>
+                <button>
+                  View More
+                  <span class="iconify" data-icon="bi:arrow-right"></span>
+                </button>
+              </div>
+            </div>
+            <div class="card-icon">
+              <span class="iconify" data-icon="bi:server"></span>
+            </div>
+          </div>
+          <div class="position-relative">
+            <div class="card border-0">
+              <div class="card-body">
+                <h4 class="card-title font-24 fw-bold">Cloud Hosting</h4>
+                <p class="card-text font-roboto font-14 fw-normal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, numquam.
+                </p>
+                <button>
+                  View More
+                  <span class="iconify" data-icon="bi:arrow-right"></span>
+                </button>
+              </div>
+            </div>
+            <div class="card-icon">
+              <span class="iconify" data-icon="fa-brands:mixcloud"></span>
+            </div>
+          </div>
+          <div class="position-relative">
+            <div class="card border-0">
+              <div class="card-body">
+                <h4 class="card-title font-24 fw-bold">Dedicated Hosting</h4>
+                <p class="card-text font-roboto font-14 fw-normal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, numquam.
+                </p>
+                <button>
+                  View More
+                  <span class="iconify" data-icon="bi:arrow-right"></span>
+                </button>
+              </div>
+            </div>
+            <div class="card-icon">
+              <span class="iconify" data-icon="fa:server"></span>
+            </div>
+          </div>
+          <div class="position-relative">
+            <div class="card border-0">
+              <div class="card-body">
+                <h4 class="card-title font-24 fw-bold">Hosting Hosting</h4>
+                <p class="card-text font-roboto font-14 fw-normal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, numquam.
+                </p>
+                <button>
+                  View More
+                  <span class="iconify" data-icon="bi:arrow-right"></span>
+                </button>
+              </div>
+            </div>
+            <div class="card-icon">
+              <span class="iconify" data-icon="fa:server"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- find your domain name  -->
+      <section class="search-domain-name section-padding" id="domain">
+        <header class="header">
+          <div class="container">
+            <p>Domain Search here</p>
+            <h2>Find Your Domain Name</h2>
+          </div>
+        </header>
+        <div class="container text-white">
+          <div
+            class="d-flex justify-content-center flex-wrap align-item-center hostingPrices font-droid"
+          >
+            <div>
+              <p class="title">.com</p>
+              <p class="font-roboto">$2.99/<sub>Year</sub></p>
+            </div>
+            <div>
+              <p class="title">.net</p>
+              <p class="font-roboto">$2.99/<sub>Year</sub></p>
+            </div>
+            <div>
+              <p class="title">.tv</p>
+              <p class="font-roboto">$2.99/<sub>Year</sub></p>
+            </div>
+            <div>
+              <p class="title">.org</p>
+              <p class="font-roboto">$2.99/<sub>Year</sub></p>
+            </div>
+            <div>
+              <p class="title">.live</p>
+              <p class="font-roboto">$2.99/<sub>Year</sub></p>
+            </div>
+          </div>
+        </div>
+        <div class="container font-droid">
+          <div class="searchBox">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control font-14 fw-normal"
+                placeholder="Enter Your Domain Name Here"
+                aria-label="Enter Your Domain Name Here"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text p-0 border-0" id="basic-addon3">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>.com</option>
+                  <option value="1">.net</option>
+                  <option value="2">.tv</option>
+                  <option value="3">.org</option>
+                  <option value="3">.live</option>
+                </select>
+              </span>
+            </div>
+          </div>
+          <div class="text-center mt-5">
+            <button class="font-droid custom-btn"><span>Search Now</span></button>
+          </div>
+        </div>
+      </section>
+      <!-- domain features  -->
+      <section class="domain-features section-padding" id="blog">
+        <header class="header">
+          <div class="container">
+            <p>find your best domain name</p>
+            <h2>domain features</h2>
+          </div>
+        </header>
+        <div class="container font-droid domainFeaturesDetails">
+          <div class="row">
+            <div class="col-sm-6 col-lg-4 wow animate__fadeInUp" data-wow-duration="2s">
+              <div class="card border-0">
+                <div class="card-body card-icon font-30">
+                  <span class="iconify" data-icon="dashicons:admin-tools"></span>
+                  <p></p>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title font-18 fw-bold">Domain DNS Management</h4>
+                  <p class="card-text font-roboto">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow animate__fadeInUp" data-wow-duration="2s">
+              <div class="card border-0">
+                <div class="card-body card-icon font-30">
+                  <span class="iconify" data-icon="icon-park-outline:speed-one"></span>
+                  <p></p>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title font-18 fw-bold">Domain DNS Management</h4>
+                  <p class="card-text font-roboto">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow animate__fadeInUp" data-wow-duration="2s">
+              <div class="card border-0">
+                <div class="card-body card-icon font-30">
+                  <span class="iconify" data-icon="fe:mail"></span>
+                  <p></p>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title font-18 fw-bold">Domain DNS Management</h4>
+                  <p class="card-text font-roboto">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow animate__fadeInUp" data-wow-duration="2s">
+              <div class="card border-0">
+                <div class="card-body card-icon font-30">
+                  <span class="iconify" data-icon="fa:lock"></span>
+                  <p></p>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title font-18 fw-bold">Domain DNS Management</h4>
+                  <p class="card-text font-roboto">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow animate__fadeInUp" data-wow-duration="2s">
+              <div class="card border-0">
+                <div class="card-body card-icon font-30">
+                  <span class="iconify" data-icon="clarity:tags-solid"></span>
+                  <p></p>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title font-18 fw-bold">Domain DNS Management</h4>
+                  <p class="card-text font-roboto">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow animate__fadeInUp" data-wow-duration="2s">
+              <div class="card border-0">
+                <div class="card-body card-icon font-30">
+                  <span class="iconify" data-icon="fa:search"></span>
+                  <p></p>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title font-18 fw-bold">Domain DNS Management</h4>
+                  <p class="card-text font-roboto">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- pricing plans  -->
+      <section class="pricing-plans section-padding">
+        <header class="header">
+          <div class="container">
+            <p>choose your best pricing package</p>
+            <h2>pricing plan</h2>
+          </div>
+        </header>
+        <div class="container mt-5">
+          <div class="row pricing-cards">
+            <div class="col-lg-4 col-md-6 wow animate__zoomIn" data-wow-duration="1s">
+              <div class="card">
+                <div class="card-header font-droid text-center text-white py-5 position-relative">
+                  <h3 class="text-capitalize font-18 fw-bold">Shared Hosting</h3>
+                  <p class="fst-italic pb-0 mt-3 font-14">Starting At</p>
+                  <p class="fw-bold font-30 price">$ 15.99<sub class="fw-light">/m</sub></p>
+                </div>
+                <div class="card-body pt-5 position-relative">
+                  <div class="position-absolute pricing-card-icon text-white">
+                    <span class="iconify" data-icon="fa:server"></span>
+                    <span class="half-border"></span>
+                  </div>
+                  <ul class="w-100 font-16 fw-normal">
+                    <li>
+                      <span class="iconify" data-icon="entypo:squared-cross"></span>
+                      Installation Charge
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      2 GB DDR3 RAM
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      20GB SSD Cloud Storage
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      Weekly Backups
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      24/7/365 Tech Support
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      Full Root Access
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      DDos Protection
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      30 Day Money Back Gurantee
+                    </li>
+                  </ul>
+                </div>
+                <div class="font-18 fw-bold pricing-card-button">
+                  <button class="font-droid">Order Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow animate__zoomIn" data-wow-duration="1s">
+              <div class="card overflow-hidden">
+                <div class="card-header font-droid text-center text-white py-5 position-relative">
+                  <h3 class="text-capitalize font-18 fw-bold">Shared Hosting</h3>
+                  <p class="fst-italic pb-0 mt-3">Starting At</p>
+                  <p class="font-30 fw-bold price">$ 15.99<sub class="fw-light">/m</sub></p>
+
+                  <p class="bg-white position-absolute font-droid py-2 recomended-plan">
+                    Recomended
+                  </p>
+                </div>
+                <div class="card-body pt-5 position-relative">
+                  <div class="position-absolute pricing-card-icon text-white">
+                    <span class="iconify" data-icon="fa:server"></span>
+                    <span class="half-border"></span>
+                  </div>
+                  <ul class="w-100 font-16 fw-normal">
+                    <li>
+                      <span class="iconify" data-icon="entypo:squared-cross"></span>
+                      Installation Charge
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      2 GB DDR3 RAM
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      20GB SSD Cloud Storage
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      Weekly Backups
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      24/7/365 Tech Support
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      Full Root Access
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      DDos Protection
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      30 Day Money Back Gurantee
+                    </li>
+                  </ul>
+                </div>
+                <div class="font-18 fw-bold pricing-card-button">
+                  <button class="font-droid">Order Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow animate__zoomIn" data-wow-duration="1s">
+              <div class="card">
+                <div class="card-header font-droid text-center text-white py-5 position-relative">
+                  <h3 class="font-18 fw-bold text-capitalize">Shared Hosting</h3>
+                  <p class="fst-italic pb-0 mt-3 font-14">Starting At</p>
+                  <p class="fw-bold font-30 price">$ 15.99<sub class="fw-light">/m</sub></p>
+                </div>
+                <div class="card-body pt-5 position-relative">
+                  <div class="position-absolute pricing-card-icon text-white">
+                    <span class="iconify" data-icon="fa:server"></span>
+                    <span class="half-border"></span>
+                  </div>
+                  <ul class="w-100 font-16 font-normal">
+                    <li>
+                      <span class="iconify" data-icon="entypo:squared-cross"></span>
+                      Installation Charge
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      2 GB DDR3 RAM
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      20GB SSD Cloud Storage
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      Weekly Backups
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      24/7/365 Tech Support
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      Full Root Access
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      DDos Protection
+                    </li>
+                    <li>
+                      <p><span class="iconify" data-icon="fontisto:checkbox-active"></span></p>
+                      30 Day Money Back Gurantee
+                    </li>
+                  </ul>
+                </div>
+                <div class="font-18 fw-bold pricing-card-button">
+                  <button class="font-droid">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- happy clients  -->
+      <div class="happy-clients">
+        <div class="text-capitalize text-white py-5">
+          <div class="container">
+            <div class="d-flex justify-content-between align-item-center flex-wrap">
+              <div class="position-relative happy-client">
+                <div class="position-absolute text-secondary happy-clients-icons">@</div>
+                <div class="position-relative happy-clients-numbers">
+                  <p class="font-droid">Registerd Domain</p>
+                  <h3 class="fw-bold">3,245</h3>
+                </div>
+              </div>
+              <div class="divider">
+                <span></span>
+              </div>
+              <div class="position-relative happy-client">
+                <div class="position-absolute text-secondary happy-clients-icons">
+                  <span class="iconify" data-icon="bi:emoji-smile-fill"></span>
+                </div>
+                <div class="position-relative happy-clients-numbers">
+                  <p class="font-droid">Happy Clients</p>
+                  <h3 class="fw-bold">281</h3>
+                </div>
+              </div>
+              <div class="divider">
+                <span></span>
+              </div>
+              <div class="position-relative happy-client">
+                <div class="position-absolute text-secondary happy-clients-icons">
+                  <span class="iconify" data-icon="foundation:page-filled"></span>
+                </div>
+                <div class="position-relative happy-clients-numbers">
+                  <p class="font-droid">Project Done</p>
+                  <h3 class="fw-bold">195</h3>
+                </div>
+              </div>
+              <div class="divider">
+                <span></span>
+              </div>
+              <div class="position-relative happy-client">
+                <div class="position-absolute text-secondary happy-clients-icons">
+                  <span class="iconify" data-icon="fa:trophy"></span>
+                </div>
+                <div class="position-relative happy-clients-numbers">
+                  <p class="font-droid">Award Won</p>
+                  <h3 class="fw-bold">195</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- what more we offer  -->
+      <section class="what-more-we-offer section-padding" id="services">
+        <header class="header">
+          <div class="container">
+            <p>Choose Your Best Pricing Package</p>
+            <h2>What More We Offer !</h2>
+          </div>
+        </header>
+        <div class="container tab-button-groups">
+          <div class="tab-active">
+            <button class="outline-0 px-3 py-2 px-md-5 py-md-3 fs-2" id="paint">
+              <span class="iconify" data-icon="fa:paint-brush"></span>
+            </button>
+            <span class="position-absolute tooltip">Tooltip</span>
+          </div>
+          <div>
+            <button class="outline-0 px-3 py-2 px-md-5 py-md-3 fs-2" id="code">
+              <span class="iconify" data-icon="entypo:code"></span>
+            </button>
+            <span class="position-absolute tooltip">Tooltip</span>
+          </div>
+          <div>
+            <button class="outline-0 px-3 py-2 px-md-5 py-md-3 fs-2" id="chart">
+              <span class="iconify" data-icon="fa:line-chart"></span>
+            </button>
+            <span class="position-absolute tooltip">Tooltip</span>
+          </div>
+          <div>
+            <button class="outline-0 px-3 py-2 px-md-5 py-md-3 fs-2" id="android">
+              <span class="iconify" data-icon="ant-design:android-filled"></span>
+            </button>
+            <span class="position-absolute tooltip">Tooltip</span>
+          </div>
+          <div>
+            <button class="outline-0 px-3 py-2 px-md-5 py-md-3 fs-2" id="marketChart">
+              <span class="iconify" data-icon="ant-design:area-chart-outlined"></span>
+            </button>
+            <span class="position-absolute tooltip">Tooltip</span>
+          </div>
+        </div>
+        <div>
+          <div class="container tab-data-container mt-5 overflow-hidden"></div>
+        </div>
+      </section>
+      <!-- why choose us  -->
+      <section class="why-chose-us section-padding">
+        <header class="header">
+          <div class="container">
+            <p>Reasones of Choose Us</p>
+            <h2>why choose us</h2>
+          </div>
+        </header>
+        <div class="container choosing-cards">
+          <div class="row">
+            <div class="col-lg-4 first-card wow animate__zoomIn" data-wow-duration="1s">
+              <div class="h-100 d-flex flex-column justify-content-center align-item-center">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="font-droid number">01</p>
+                  <div class="text-end text-white">
+                    <p class="fs-3"><span class="iconify" data-icon="fa:lock"></span></p>
+                    <p class="font-droid fw-bold mt-3">100% Secure</p>
+                  </div>
+                </div>
+                <div class="font-roboto fs-6 text-end text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptate
+                  dolorem facilis maxime quis officiis
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 second-card-container">
+              <div class="row">
+                <div class="col-sm-6 second-card wow animate__zoomIn" data-wow-duration="1s">
+                  <div class="h-100 d-flex flex-column justify-content-center align-item-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="text-white">
+                        <p class="fs-3"><span class="iconify" data-icon="entypo:rocket"></span></p>
+                        <p class="font-droid fw-bold mt-3">Auto Update</p>
+                      </div>
+                      <p class="font-droid number">02</p>
+                    </div>
+                    <div class="font-roboto fs-6 text-white">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptate
+                      dolorem facilis maxime quis officiis
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 third-card wow animate__zoomIn" data-wow-duration="1s">
+                  <div class="h-100 d-flex flex-column justify-content-center align-item-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="text-white">
+                        <p class="fs-3"><span class="iconify" data-icon="fa:user-o"></span></p>
+                        <p class="font-droid fw-bold mt-3">Account Isolation</p>
+                      </div>
+                      <p class="font-droid number">03</p>
+                    </div>
+                    <div class="font-roboto fs-6 text-white">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptate
+                      dolorem facilis maxime quis officiis
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row second-row">
+                <div
+                  class="col-md-7 col-sm-6 fourth-card wow animate__zoomIn"
+                  data-wow-duration="1s"
+                >
+                  <div class="h-100 d-flex flex-column justify-content-center align-item-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="text-white">
+                        <p class="fs-3">
+                          <span class="iconify" data-icon="fa-solid:headphones"></span>
+                        </p>
+                        <p class="font-droid fw-bold mt-3">24/7/365 Tech Support</p>
+                      </div>
+                      <p class="font-droid number">04</p>
+                    </div>
+                    <div class="font-roboto fs-6 text-white">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptate
+                      dolorem facilis maxime quis officiis
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-5 col-sm-6 fifth-card wow animate__zoomIn"
+                  data-wow-duration="1s"
+                >
+                  <div class="h-100 d-flex flex-column justify-content-center align-item-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="text-white">
+                        <p class="fs-3"><span class="iconify" data-icon="et:gears"></span></p>
+                        <p class="font-droid fw-bold mt-3">Easy to Customize</p>
+                      </div>
+                      <p class="font-droid number">05</p>
+                    </div>
+                    <div class="font-roboto fs-6 text-white">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptate
+                      dolorem facilis maxime quis officiis
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- what clients say  -->
+      <section class="what-clients-say section-padding">
+        <header class="header">
+          <div class="container">
+            <p>Some of Review From Our Customers</p>
+            <h2>what client's say</h2>
+          </div>
+        </header>
+        <div class="container">
+          <div class="swiper mySwipertwo">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="position-relative">
+                  <h4 class="font-droid fw-bold">Omrhost is the best</h4>
+                  <p class="position-absolute text-secondary fs-2">
+                    <span class="iconify" data-icon="fa-solid:quote-left"></span>
+                  </p>
+                </div>
+                <div class="star-ratings">
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-fill"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-fill"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-fill"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-half"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star"></span>
+                  </button>
+                </div>
+                <p class="review-text my-4">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam obcaecati ratione
+                  veniam. Recusandae iste assumenda sint aut dolorem est ea.
+                </p>
+                <div class="d-flex align-items-center client-info">
+                  <div class="client-img">
+                    <img src="images/user1.png" alt="user" />
+                  </div>
+                  <div>
+                    <h4 class="font-droid">Mr. Omayer H Linkon</h4>
+                    <p>New yourk, United States.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative">
+                  <h4 class="font-droid fw-bold">Omrhost is the best</h4>
+                  <p class="position-absolute text-secondary fs-2">
+                    <span class="iconify" data-icon="fa-solid:quote-left"></span>
+                  </p>
+                </div>
+                <div class="star-ratings">
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-fill"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-fill"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-fill"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-half"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star"></span>
+                  </button>
+                </div>
+                <p class="review-text my-4">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam obcaecati ratione
+                  veniam. Recusandae iste assumenda sint aut dolorem est ea.
+                </p>
+                <div class="d-flex align-items-center client-info">
+                  <div class="client-img">
+                    <img src="images/user1.png" alt="user" />
+                  </div>
+                  <div>
+                    <h4 class="font-droid">Mr. Omayer H Linkon</h4>
+                    <p>New yourk, United States.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative">
+                  <h4 class="font-droid fw-bold">Omrhost is the best</h4>
+                  <p class="position-absolute text-secondary fs-2">
+                    <span class="iconify" data-icon="fa-solid:quote-left"></span>
+                  </p>
+                </div>
+                <div class="star-ratings">
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-fill"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-fill"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-fill"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-half"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star"></span>
+                  </button>
+                </div>
+                <p class="review-text my-4">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam obcaecati ratione
+                  veniam. Recusandae iste assumenda sint aut dolorem est ea.
+                </p>
+                <div class="d-flex align-items-center client-info">
+                  <div class="client-img">
+                    <img src="images/user1.png" alt="user" />
+                  </div>
+                  <div>
+                    <h4 class="font-droid">Mr. Omayer H Linkon</h4>
+                    <p>New yourk, United States.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative">
+                  <h4 class="font-droid fw-bold">Omrhost is the best</h4>
+                  <p class="position-absolute text-secondary fs-2">
+                    <span class="iconify" data-icon="fa-solid:quote-left"></span>
+                  </p>
+                </div>
+                <div class="star-ratings">
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-fill"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-fill"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-fill"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star-half"></span>
+                  </button>
+                  <button class="border-0 bg-transparent fs-4">
+                    <span class="iconify" data-icon="bi:star"></span>
+                  </button>
+                </div>
+                <p class="review-text my-4">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam obcaecati ratione
+                  veniam. Recusandae iste assumenda sint aut dolorem est ea.
+                </p>
+                <div class="d-flex align-items-center client-info">
+                  <div class="client-img">
+                    <img src="images/user1.png" alt="user" />
+                  </div>
+                  <div>
+                    <h4 class="font-droid">Mr. Omayer H Linkon</h4>
+                    <p>New yourk, United States.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container d-flex justify-content-center align-items-center text-secondary mt-3 mt-md-5"
+        >
+          <button class="border-0 py-2 px-2 fs-4 bg-transparent prev-review">
+            <span class="iconify" data-icon="entypo:arrow-long-left"></span>
+          </button>
+          <span class="fs-3 fw-bold text-secondary">/</span>
+          <button class="border-0 py-2 px-2 fs-4 bg-transparent next-review">
+            <span class="iconify" data-icon="entypo:arrow-long-right"></span>
+          </button>
+        </div>
+      </section>
+      <!-- contact informations  -->
+      <div class="contact-info overflow-hidden" id="contact">
+        <div
+          class="container d-flex flex-wrap justify-content-around align-items-center text-white wow animate__slideInUp"
+          data-wow-duration="2s"
+        >
+          <div class="d-flex my-3">
+            <p class="fs-2 d-flex align-items-start">
+              <span class="iconify" data-icon="ic:sharp-location-on"></span>
+            </p>
+            <div class="ms-3">
+              <h4 class="font-droid fw-lighter">Where We Are</h4>
+              <p class="font-roboto fw-lighter address">79/2 free Street, Maijdee, Noakhali</p>
+            </div>
+          </div>
+          <div class="d-flex my-3">
+            <p class="fs-2 d-flex align-items-start">
+              <span class="iconify" data-icon="fa-solid:headphones"></span>
+            </p>
+            <div class="ms-3">
+              <h4 class="font-droid fw-lighter">+12345 678912</h4>
+              <p class="font-roboto fw-lighter address">24/7 Customer Service Availabel</p>
+            </div>
+          </div>
+          <div class="d-flex my-3">
+            <p class="fs-2 d-flex align-items-start">
+              <span class="iconify" data-icon="fluent:mail-20-regular"></span>
+            </p>
+            <div class="ms-3">
+              <h4 class="font-droid fw-lighter">Email Us</h4>
+              <p class="font-roboto fw-lighter address">support@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 first-column">
+            <a href="#" class="d-inline-block">
+              <img src="images/logowhite.png" alt="logo" />
+            </a>
+            <p class="font-roboto fs-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae atque magni
+              distinctio tenetur dolor voluptate! Quod provident voluptatibus nulla incidunt
+              voluptatem modi enim quo et!
+            </p>
+            <button class="border-0 bg-transparent mt-4">
+              Learn More <span class="iconify" data-icon="fa:long-arrow-right"></span>
+            </button>
+            <div class="d-flex mt-4 social-icons">
+              <p>Follow Us</p>
+              <a href="#" class="d-inline-block"
+                ><span class="iconify" data-icon="cib:facebook-f"></span
+              ></a>
+              <a href="#" class="d-inline-block"
+                ><span class="iconify" data-icon="bi:twitter"></span
+              ></a>
+              <a href="#" class="d-inline-block"
+                ><span class="iconify" data-icon="akar-icons:linkedin-v2-fill"></span
+              ></a>
+              <a href="#" class="d-inline-block"
+                ><span class="iconify" data-icon="fontisto:google-plus"></span
+              ></a>
+              <a href="#" class="d-inline-block"
+                ><span class="iconify" data-icon="fa:pinterest-p"></span
+              ></a>
+              <a href="#" class="d-inline-block"
+                ><span class="iconify" data-icon="fa:youtube"></span
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 second-column">
+            <h4 class="font-droid">Usefull Links</h4>
+            <div>
+              <div>
+                <a href="#" class="d-inline-block">
+                  <span class="iconify" data-icon="el:hand-right"></span>
+                  <span>Terms of Conditions of this Company</span>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="d-inline-block">
+                  <span class="iconify" data-icon="el:hand-right"></span>
+                  <span>Knowledge Base</span>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="d-inline-block">
+                  <span class="iconify" data-icon="el:hand-right"></span>
+                  <span>Live Chat/Support</span>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="d-inline-block">
+                  <span class="iconify" data-icon="el:hand-right"></span>
+                  <span>Transfer your Domain Name</span>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="d-inline-block">
+                  <span class="iconify" data-icon="el:hand-right"></span>
+                  <span>Traffic Booster</span>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="d-inline-block">
+                  <span class="iconify" data-icon="el:hand-right"></span>
+                  <span>Twebsite Builder With Our Great Team</span>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="d-inline-block">
+                  <span class="iconify" data-icon="el:hand-right"></span>
+                  <span>Data Center</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 second-column third-column">
+            <h4 class="font-droid">Services</h4>
+            <div>
+              <div>
+                <a href="#" class="d-inline-block">
+                  <span class="iconify" data-icon="el:hand-right"></span>
+                  <span>Terms of Conditions</span>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="d-inline-block">
+                  <span class="iconify" data-icon="el:hand-right"></span>
+                  <span>Knowledge Base</span>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="d-inline-block">
+                  <span class="iconify" data-icon="el:hand-right"></span>
+                  <span>Live Chat/Support</span>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="d-inline-block">
+                  <span class="iconify" data-icon="el:hand-right"></span>
+                  <span>Transfer your Domain Name</span>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="d-inline-block">
+                  <span class="iconify" data-icon="el:hand-right"></span>
+                  <span>Traffic Booster</span>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="d-inline-block">
+                  <span class="iconify" data-icon="el:hand-right"></span>
+                  <span>Twebsite Builder With Our Great Team</span>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="d-inline-block">
+                  <span class="iconify" data-icon="el:hand-right"></span>
+                  <span>Data Center With High Security</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 fourth-column">
+            <h4 class="font-droid">Email Newsletter</h4>
+            <div>
+              <p>
+                Subscribe to get Exclusive offer & <br />
+                updates in your E-maill
+              </p>
+              <div class="input-group mt-5">
+                <input
+                  type="email"
+                  class="form-control rounded-0"
+                  placeholder="Your E-mail Address"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                />
+                <button class="input-group-text rounded-0 border-0 font-droid" id="basic-addon2">
+                  Subscribe
+                </button>
+              </div>
+              <div class="payment-btns">
+                <h4 class="font-droid my-4">We Accepet:</h4>
+                <div>
+                  <button>
+                    <img src="images/visacard.png" alt="visa" />
+                  </button>
+                  <button>
+                    <img src="images/mastercard.png" alt="master" />
+                  </button>
+                  <button>
+                    <img src="images/discovercard.png" alt="discover" />
+                  </button>
+                  <button>
+                    <img src="images/paypalcard.png" alt="paypalcard" />
+                  </button>
+                  <button>
+                    <img src="images/expresswaycard.png" alt="expresswaycard" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- wow js  -->
+    <script src="./js/extra/wow.min.js"></script>
+    <!-- iconify icons  -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

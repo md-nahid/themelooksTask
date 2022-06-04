@@ -1,0 +1,130 @@
+.what-more-we-offer {
+  background: $navBackground;
+  .tab-button-groups {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > div {
+      position: relative;
+      button {
+        border: none;
+        outline: none;
+        background: #ffffff;
+        border: 1px solid $lightGray;
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border: 1px solid $themeColor;
+          opacity: 0;
+          transition: opacity 0.5s ease;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translate(-50%, 100%);
+          border: 10px solid;
+          border-color: $themeColor transparent transparent transparent;
+          opacity: 0;
+          transition: opacity 0.5s ease;
+        }
+      }
+      .tooltip {
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -150%);
+        background: $themeColor;
+        padding: 5px 12px;
+        font-size: 14px;
+        color: #ffffff;
+        opacity: 0;
+        transition: opacity 1s ease;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translate(-50%, 100%);
+          border: 10px solid;
+          border-color: $themeColor transparent transparent transparent;
+        }
+      }
+      &:hover {
+        button {
+          &::after {
+            opacity: 1;
+          }
+          &::before {
+            opacity: 1;
+          }
+        }
+        .tooltip {
+          opacity: 1;
+        }
+      }
+    }
+    .tab-active {
+      button {
+        &::after {
+          opacity: 1;
+        }
+        &::before {
+          opacity: 1;
+        }
+      }
+      .tooltip {
+        opacity: 1;
+      }
+    }
+  }
+  .tab-data-container {
+    .tab-card {
+      background: #ffffff;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      padding: 50px 70px;
+      border-radius: 6px;
+      @media (max-width: 640px) {
+        padding: 20px 40px;
+      }
+      @media (max-width: 575px) {
+        padding: 20px 20px;
+      }
+      > div {
+        h4 {
+          font-size: 24px;
+          font-weight: bold;
+          color: $primaryFontColr;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 14px;
+          color: $secondaryFontColor;
+        }
+        .notice-text {
+          color: $thirdFontColor;
+          font-style: italic;
+        }
+        > div {
+          margin-top: 20px;
+          button {
+            color: $themeColor;
+          }
+        }
+      }
+      .tab-container-img {
+        @media (max-width: 768px) {
+          margin-top: 50px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

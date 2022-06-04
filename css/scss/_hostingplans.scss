@@ -1,0 +1,70 @@
+.hosting-plans {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 80px;
+  background: $navBackground;
+  margin-top: 60px;
+  @media (min-width: 575px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 0;
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (min-width: 1400px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  > div {
+    background: $themeColor;
+    color: #ffffff;
+    padding: 40px 15px 15px 15px;
+    transition: all 0.5s ease;
+    .card {
+      background: transparent;
+      position: relative;
+      p {
+        line-height: 1.2;
+      }
+      button {
+        position: absolute;
+        left: 15px;
+        bottom: 0;
+        background-color: transparent;
+        padding: 0;
+        color: $themeColor;
+        border: none;
+        outline: none;
+        display: none;
+      }
+    }
+    .card-icon {
+      position: absolute;
+      left: 30px;
+      top: 0;
+      transform: translateY(-50%);
+      padding: 13px 15px;
+      border-radius: 999px;
+      border: 8px solid #ffffff;
+      outline: 2px solid $primaryFontColr;
+      background: $themeColor;
+    }
+    &:hover {
+      background: $navBackground;
+      color: $primaryFontColr;
+      transform: translateY(-30px);
+      .card {
+        button {
+          display: block;
+          bottom: -20px;
+        }
+      }
+      .card-icon {
+        background-color: $primaryFontColr;
+        color: #ffffff;
+      }
+    }
+  }
+}

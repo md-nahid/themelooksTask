@@ -1,0 +1,15 @@
+.contact-info {
+  background: $navBackground;
+  > div {
+    background: $themeColor;
+    padding: 30px 0;
+    @media (max-width: 400px) {
+      justify-content: flex-start !important;
+      padding: 30px 20px;
+    }
+    .address {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+  }
+}

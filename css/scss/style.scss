@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+}
+
+// reusable classes
+// custom colors
+$navBackground: #f9f9f9;
+$lightGray: #f2f2f2;
+$themeColor: #119ee6;
+$primaryFontColr: #222222;
+$secondaryFontColor: #555555;
+$thirdFontColor: #999999;
+$fourthFontColor: #444444;
+$fifthFontColor: #777777;
+$footerBackground: #151414;
+
+// custom font family classes
+.font-droid {
+  font-family: 'Droid Serif';
+}
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+// some fix with global styling
+a {
+  text-decoration: none;
+  color: $primaryFontColr;
+}
+img {
+  width: 100%;
+}
+.btn,
+input {
+  &:focus {
+    box-shadow: none;
+  }
+}
+.scrollDisabled {
+  overflow-y: hidden;
+}
+// section header
+.header {
+  color: #000000;
+  text-transform: capitalize;
+  font-family: 'Droid Serif';
+  text-align: center;
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    color: $thirdFontColor;
+  }
+  h2 {
+    font-size: 36px;
+    font-weight: 700 !important;
+    margin-top: 24px;
+    color: $primaryFontColr;
+  }
+}
+// section paddying
+.section-padding {
+  padding: 38px 0;
+  @media (min-width: 575px) {
+    padding: 70px 0;
+  }
+  @media (min-width: 768px) {
+    padding: 98px 0;
+  }
+}
+// custom font sizes
+.font-14 {
+  font-size: 14px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-24 {
+  font-size: 24px;
+}
+.font-30 {
+  font-size: 30px;
+}
+.font-36 {
+  font-size: 36px;
+}
+.font-48 {
+  font-size: 48px;
+}
+.font-78 {
+  font-size: 78px;
+}
+// custom button
+@import 'customBtn';
+// custom button
+@import 'customFonts';
+@import 'topbar';
+@import 'navigation';
+@import 'heroSection';
+@import 'hostingplans';
+@import 'searchDomainName';
+@import 'domainFeatures';
+@import 'pricingPlans';
+@import 'happyClients';
+@import 'whatMoreWeOffer';
+@import 'whyChoseUs';
+@import 'whatClientsSay';
+@import 'contactInfo';
+@import 'footer';
