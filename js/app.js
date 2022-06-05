@@ -209,10 +209,18 @@ viewData(tooltipData[0]);
 // ==================================================
 const navigationHeader = document.querySelector('.navigationHeader');
 window.addEventListener('scroll', () => {
-  if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
-    navigationHeader.classList.add('scrolled');
+  if (window.innerWidth < 992) {
+    if (document.documentElement.scrollTop > 50 || document.body.scrollTop > 50) {
+      navigationHeader.classList.add('scrolled');
+    } else {
+      navigationHeader.classList.remove('scrolled');
+    }
   } else {
-    navigationHeader.classList.remove('scrolled');
+    if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+      navigationHeader.classList.add('scrolled');
+    } else {
+      navigationHeader.classList.remove('scrolled');
+    }
   }
 });
 
