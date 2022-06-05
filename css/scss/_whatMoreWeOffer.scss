@@ -2,13 +2,11 @@
   background: $navBackground;
   .tab-button-groups {
     margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @media (max-width: 768px) {
+      margin-top: 60px;
+    }
     > div {
-      position: relative;
       button {
-        border: none;
         outline: none;
         background: #ffffff;
         border: 1px solid $lightGray;
@@ -40,17 +38,15 @@
         transform: translate(-50%, -150%);
         background: $themeColor;
         padding: 5px 12px;
-        font-size: 14px;
         color: #ffffff;
         opacity: 0;
         transition: opacity 1s ease;
-
         &::after {
           content: '';
           position: absolute;
           left: 50%;
           bottom: 0;
-          transform: translate(-50%, 100%);
+          transform: translate(-50%, 95%);
           border: 10px solid;
           border-color: $themeColor transparent transparent transparent;
         }
@@ -84,45 +80,32 @@
     }
   }
   .tab-data-container {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     .tab-card {
       background: #ffffff;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
       padding: 50px 70px;
       border-radius: 6px;
       @media (max-width: 640px) {
         padding: 20px 40px;
       }
       @media (max-width: 575px) {
-        padding: 20px 20px;
+        padding: 10px 10px;
       }
       > div {
         h4 {
-          font-size: 24px;
-          font-weight: bold;
           color: $primaryFontColr;
-          margin-bottom: 20px;
         }
         p {
-          font-size: 14px;
           color: $secondaryFontColor;
         }
         .notice-text {
           color: $thirdFontColor;
-          font-style: italic;
+          line-height: 1.8;
         }
         > div {
-          margin-top: 20px;
           button {
             color: $themeColor;
           }
-        }
-      }
-      .tab-container-img {
-        @media (max-width: 768px) {
-          margin-top: 50px;
-        }
-        img {
-          width: 100%;
         }
       }
     }

@@ -180,20 +180,20 @@ function viewData(data) {
   let view = `
   <div class="tab-card row  ${data.animate}">
     <div class="col-lg-8 col-md-6">
-      <h4 class="card-title font-droid text-capitalize">${data.title}</h4>
-      <p class="card-text font-roboto">${data.text1}</p>
-      <p class="border-start border-5 text-italic border-secondary ps-3 my-3 notice-text">
+      <h4 class="card-title font-droid font-24 fw-bold text-capitalize">${data.title}</h4>
+      <p class="card-text font-roboto font-14 fw-normal">${data.text1}</p>
+      <p class="border-start border-5 fst-italic font-14 border-secondary ps-3 my-3 notice-text">
       ${data.notice}
       </p>
-      <p class="card-text">${data.text2}</p>
-      <div>
-        <button class="btn btn-transparent">
+      <p class="card-text font-14 fw-normal">${data.text2}</p>
+      <div class="mt-3">
+        <button class="btn btn-transparent px-0">
           Learn more
           <span class="iconify" data-icon="bi:arrow-right"></span>
         </button>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6 d-flex align-items-center tab-container-img">
+    <div class="col-lg-4 col-md-6 d-flex align-items-center mt-4 mt-md-0">
       <img src="${data.img}" alt="icon" />
     </div>
   </div>
