@@ -67,6 +67,9 @@ input {
     font-weight: 700 !important;
     margin-top: 24px;
     color: $primaryFontColr;
+    @media (max-width: 575px) {
+      font-size: 28px;
+    }
   }
 }
 // section paddying

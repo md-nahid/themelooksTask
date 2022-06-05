@@ -26,7 +26,8 @@
             transition: all 1s ease;
             a {
               display: inline-block;
-              padding: 25px 15px;
+              padding: 40px 15px;
+              transition: 0.5s ease;
             }
             &:hover {
               > a {
@@ -108,9 +109,11 @@
         }
       }
       .mobileMenu {
+        padding: 20px 0;
+        transition: 0.5s ease;
         button {
           background: none;
-          font-size: 35px;
+          font-size: 28px;
           border: none;
           outline: none;
           color: $primaryFontColr;
@@ -211,6 +214,7 @@
           > li {
             > a {
               padding: 14px 15px;
+              transition: 0.5s ease;
             }
           }
           .navUserBtn {
@@ -224,6 +228,10 @@
             }
           }
         }
+      }
+      .mobileMenu {
+        padding: 0px;
+        transition: 0.5s ease;
       }
     }
   }

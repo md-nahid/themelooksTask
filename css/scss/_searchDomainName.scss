@@ -14,6 +14,9 @@
   }
   .hostingPrices {
     margin: 60px 0;
+    @media (max-width: 575px) {
+      margin: 30px 0;
+    }
     > div {
       margin: 0 15px;
     }
@@ -24,11 +27,20 @@
     margin: auto;
     .input-group {
       border: 10px solid $themeColor;
+      @media (max-width: 575px) {
+        flex-direction: column;
+      }
       input {
         border-radius: 0px;
+        @media (max-width: 575px) {
+          width: 100%;
+          padding: 20px 0;
+          text-align: center;
+        }
       }
       > span {
         background: black;
+
         .form-select {
           background-color: transparent;
           background: url('https://api.iconify.design/akar-icons/chevron-down.svg?color=white')
@@ -37,6 +49,11 @@
           border: 0;
           padding: 0 50px;
           color: #ffffff;
+          @media (max-width: 575px) {
+            padding: 20px 0;
+            text-align: center;
+            background-position: 60% center;
+          }
           option {
             color: #000000;
           }
