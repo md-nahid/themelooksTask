@@ -1,3 +1,30 @@
+.backToTop {
+  bottom: 50px;
+  right: 50px;
+  color: $primaryFontColr;
+  z-index: 999;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  display: none;
+  @media (max-width: 992px) {
+    bottom: 20px;
+    right: 20px;
+  }
+  a {
+    padding: 12px 15px;
+    background: $navBackground;
+    transition: 0.3s ease;
+    @media (max-width: 640px) {
+      padding: 8px;
+    }
+    &:hover {
+      color: #ffffff;
+      background: linear-gradient(90deg, rgba(2, 126, 251, 1) 0%, rgba(0, 172, 238, 1) 100%);
+    }
+  }
+}
+
 .topbar {
   .container {
     font-weight: 300;

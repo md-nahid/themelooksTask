@@ -225,3 +225,13 @@ allNavLinks.forEach((link) => {
     link.classList.add('navActive');
   });
 });
+
+// backto top button
+const backToTOp = document.querySelector('.backToTop');
+window.addEventListener('scroll', () => {
+  if (document.documentElement.scrollTop > 500 || document.body.scrollTop > 500) {
+    backToTOp.classList.add('d-flex');
+  } else {
+    backToTOp.classList.remove('d-flex');
+  }
+});
