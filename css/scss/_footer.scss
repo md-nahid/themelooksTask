@@ -1,81 +1,94 @@
 footer {
-  padding: 80px 0;
   background: $footerBackground;
-  .first-column {
-    > p {
-      color: $thirdFontColor;
-    }
-    button {
-      color: #cccccc;
-    }
-    .social-icons {
-      color: $fifthFontColor;
-      > a {
-        color: $fifthFontColor;
-        margin-left: 10px;
-        &:hover {
-          color: $themeColor;
-        }
+  .first-row {
+    padding: 80px 0;
+    .first-column {
+      > p {
+        color: $thirdFontColor;
       }
-    }
-  }
-  .second-column {
-    > div {
-      a {
-        color: #ffffff;
-        margin-bottom: 8px;
-        &:hover {
-          color: $themeColor;
-          span {
+      button {
+        color: #cccccc;
+      }
+      .social-icons {
+        color: $fifthFontColor;
+        > a {
+          color: $fifthFontColor;
+          margin-left: 10px;
+          &:hover {
             color: $themeColor;
           }
         }
-        span {
-          margin-left: 8px;
+      }
+    }
+    .second-column {
+      > div {
+        a {
+          color: #ffffff;
+          margin-bottom: 8px;
+          &:hover {
+            color: $themeColor;
+            span {
+              color: $themeColor;
+            }
+          }
+          span {
+            margin-left: 8px;
+            color: $thirdFontColor;
+          }
+        }
+      }
+    }
+    .fourth-column {
+      > div {
+        p {
           color: $thirdFontColor;
+          transform: translateY(-8px);
+        }
+        .input-group {
+          width: 100%;
+          padding: 5px;
+          background: #ffffff;
+          button {
+            background: $themeColor;
+            color: #ffffff;
+            &:hover {
+              background: rgb(6, 105, 151);
+            }
+          }
+        }
+        .payment-btns {
+          > div {
+            button {
+              width: 50px;
+              height: 30px;
+              border: none;
+              outline: none;
+              transition: 0.5s ease;
+              margin-right: 3px;
+              margin-top: 6px;
+              &:first-child {
+                margin-left: 0;
+              }
+              &:hover {
+                transform: scale(0.9);
+              }
+              img {
+                height: 100%;
+              }
+            }
+          }
         }
       }
     }
   }
-
-  .fourth-column {
-    > div {
-      p {
-        color: $thirdFontColor;
-        transform: translateY(-8px);
-      }
-      .input-group {
-        width: 100%;
-        padding: 5px;
-        background: #ffffff;
-        button {
-          background: $themeColor;
-          color: #ffffff;
-          &:hover {
-            background: rgb(6, 105, 151);
-          }
-        }
-      }
-      .payment-btns {
-        > div {
-          button {
-            width: 50px;
-            height: 30px;
-            border: none;
-            outline: none;
-            transition: 0.5s ease;
-            margin-right: 3px;
-            margin-top: 6px;
-            &:first-child {
-              margin-left: 0;
-            }
-            &:hover {
-              transform: scale(0.9);
-            }
-            img {
-              height: 100%;
-            }
-          }
+  .second-row {
+    border-top: 1px solid $secondaryFontColor;
+    .container {
+      padding: 30px 0;
+      color: $thirdFontColor;
+      span {
+        &:not(:first-child) {
+          color: $themeColor;
         }
       }
     }
